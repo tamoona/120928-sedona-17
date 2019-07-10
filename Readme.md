@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Anastasia Alimpieva](https://up.htmlacademy.ru/adaptive/17/user/120928).
-* Наставник: `Неизвестно`.
+- Студент: [Anastasia Alimpieva](https://up.htmlacademy.ru/adaptive/17/user/120928).
+- Наставник: [Юлия Антонова](https://htmlacademy.ru/profile/id39082).
 
 ---
 
