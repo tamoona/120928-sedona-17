@@ -1,3 +1,12 @@
+.photo-preview__picture {
+  vertical-align: bottom;
+}
+
+.photo-preview__image-link {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .photo-preview__caption {
   font-size: 14px;
   line-height: 24px;
@@ -24,4 +33,22 @@
   font-weight: bold;
   line-height: 1.71;
   color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-preview__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eaeaea;
+    padding: 15px;
+
+    .photo-preview__caption {
+      margin: 0;
+    }
+
+    .photo-preview__author {
+      margin: 0;
+    }
+  }
 }

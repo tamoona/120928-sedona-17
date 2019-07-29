@@ -1,6 +1,17 @@
 .features {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.features__item {
+  display: flex;
+  padding: 10px;
+}
+
+.features__content {
+  margin: 0 10px;
 }
 
 .features__title {
@@ -15,4 +26,21 @@
   line-height: 1.5;
   color: #333333;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .features {
+    display: flex;
+  }
+
+  .features__item {
+    display: block;
+    width: 33.3%;
+    text-align: center;
+    padding: 30px;
+
+    &:nth-child(2) {
+      order: 2;
+    }
+  }
 }

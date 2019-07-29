@@ -1,3 +1,27 @@
 .photos {
+  display: block;
   padding: 0;
+}
+
+.photos__item {
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px;
+  }
+
+  .photos__item {
+    width: 50%;
+
+    &--full-width {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
 }

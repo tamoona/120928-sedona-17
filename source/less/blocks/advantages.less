@@ -1,9 +1,19 @@
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .advantages__item {
+  background-color: #81b3d2;
+  width: 100%;
   text-align: center;
 }
 
 .advantages__content {
-  background-color: #81b3d2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .advantages__slogan {
@@ -23,7 +33,7 @@
 
 .advantages__item--short {
   position: relative;
-  background-color: #eeeeee;
+  background-color: #f2f2f2;
 
   &::after {
     content: "";
@@ -52,4 +62,48 @@
 .advantages__number {
   display: block;
   color: #ffffff;
+}
+
+.advantages__content {
+  width: 100%;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__item {
+    display: flex;
+    align-items: stretch;
+    background-repeat: no-repeat;
+    background-size: 70% auto;
+    width: 100%;
+    min-height: 256px;
+
+    &--real-town {
+      background-image: url("../../img/main-city-tablet@1x.jpg");
+      background-position: 100% 50%;
+    }
+
+    &--bridge-devil {
+      background-image: url("../../img/main-bridge-tablet@1x.jpg");
+      background-position: 0% 50%;
+      justify-content: flex-end;
+    }
+
+    &--short {
+      width: 33.33%;
+      text-align: center;
+
+      &::after {
+        display: none;
+      }
+
+      .advantages__content {
+        width: 100%;
+      }
+    }
+  }
+
+  .advantages__content {
+    width: 30%;
+    padding: 12px;
+  }
 }
