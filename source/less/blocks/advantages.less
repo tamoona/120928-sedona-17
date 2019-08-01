@@ -1,9 +1,24 @@
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .advantages__item {
+  background-color: #81b3d2;
+  width: 100%;
   text-align: center;
+
+  img {
+    vertical-align: bottom;
+  }
 }
 
 .advantages__content {
-  background-color: #81b3d2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 
 .advantages__slogan {
@@ -23,7 +38,7 @@
 
 .advantages__item--short {
   position: relative;
-  background-color: #eeeeee;
+  background-color: #f2f2f2;
 
   &::after {
     content: "";
@@ -52,4 +67,42 @@
 .advantages__number {
   display: block;
   color: #ffffff;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__item {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    min-height: 256px;
+
+    img {
+      object-fit: fill;
+      width: 67.5%;
+    }
+
+    &--bridge-devil {
+      .advantages__content {
+        order: 2;
+      }
+    }
+
+    &--short {
+      width: 33.33%;
+      text-align: center;
+
+      &::after {
+        display: none;
+      }
+
+      .advantages__content {
+        width: 100%;
+      }
+    }
+  }
+
+  .advantages__content {
+    width: 32.5%;
+    padding: 12px;
+  }
 }
