@@ -6,6 +6,7 @@
 }
 
 .page-header__logo {
+  display: block;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -13,6 +14,10 @@
   bottom: -32px;
   width: 102px;
   height: 83px;
+}
+
+.page-header__logo-image {
+  width: 100%;
 }
 
 .page-header__toggle {
@@ -37,10 +42,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-header__logo-image {
-    min-width: 83px;
-  }
-
   .page-header__logo {
     top: 0;
     bottom: auto;
@@ -56,7 +57,8 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-header__logo-image {
-    min-width: 188px;
+  .page-header__logo {
+    width: 186.643px;
+    height: 96.425px;
   }
 }
