@@ -18,7 +18,7 @@
     &::before {
       content: "";
       position: absolute;
-      background-image: url(../../img/bg-triangle.svg);
+      background-image: url("../../img/bg-triangle.svg");
       background-position-x: center;
       top: 0;
       left: 0;
@@ -41,7 +41,11 @@
   text-align: center;
   width: 100%;
   margin-top: 39px;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
+
+  br {
+    display: none;
+  }
 }
 
 .advantages__slogan {
@@ -56,22 +60,30 @@
   line-height: 1.5;
   color: #ffffff;
   text-transform: uppercase;
-  margin: 0;
-  padding: 18px 25px 15px 27px;
+  margin: 17px 25px 15px 27px;
 }
 
 .advantages__item--short {
   position: relative;
   background-color: #f2f2f2;
-  // margin-bottom: -34px;
 
   .advantages__content {
     margin-top: 27px;
     margin-bottom: 14px;
   }
 
+  .advantages__slogan {
+    color: #000000;
+  }
+
+  .advantages__description {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+
+  .advantages__description,
   .advantages__number {
-    padding-right: 23px;
+    color: #333333;
   }
 
   &::after {
@@ -87,42 +99,44 @@
   &:last-child::after {
     display: none;
   }
-
-  .advantages__slogan {
-    color: #000000;
-  }
-
-  .advantages__description,
-  .advantages__number {
-    color: #333333;
-    padding-left: 33px;
-    margin-right: 10px;
-  }
 }
 
 .advantages__number {
   display: block;
   color: #ffffff;
   font-size: 14px;
-  padding-top: 12px;
+  margin-top: 12px;
 }
 
 @media (min-width: @tablet-width) {
+  .advantages {
+    margin-top: 50px;
+  }
+
   .advantages__item {
     display: flex;
     align-items: stretch;
     width: 100%;
     min-height: 256px;
 
+    &:nth-child(6) .advantages__description {
+      margin: 25px 55px 0 55px;
+    }
+
+    img {
+      object-fit: cover;
+      width: 66.7%;
+      height: 256px;
+    }
+
     &--real-town {
       &::before {
         display: none;
       }
-    }
 
-    img {
-      object-fit: fill;
-      width: 67.5%;
+      .advantages__content {
+        margin: 0;
+      }
     }
 
     &--bridge-devil {
@@ -141,12 +155,43 @@
 
       .advantages__content {
         width: 100%;
+        margin: 0;
+      }
+
+      .advantages__slogan {
+        margin: 0 50px 0;
+      }
+
+      .advantages__number {
+        margin-top: 11px;
+      }
+
+      .advantages__description {
+        margin: 25px 40px 0 40px;
       }
     }
   }
 
   .advantages__content {
-    width: 32.5%;
-    padding: 12px;
+    width: 33.3%;
+    margin: 0;
+
+    br {
+      display: block;
+    }
+  }
+
+  .advantages__slogan {
+    margin: 28px 50px 0;
+    font-size: 21px;
+    line-height: 1.26;
+  }
+
+  .advantages__description {
+    margin: 27px 44px 26px 44px;
+  }
+
+  .advantages__number {
+    margin-top: 11px;
   }
 }
