@@ -2,12 +2,16 @@
   list-style: none;
   padding: 0;
   display: block;
-  margin: 28px 0 15px 18px;
+  margin: 28px 0 16px 18px;
 }
 
 .features__item {
   display: flex;
   margin-bottom: 8px;
+
+  br {
+    display: none;
+  }
 
   svg {
     fill: #81b3d2;
@@ -73,5 +77,22 @@
   .features__title {
     font-size: 21px;
     margin-top: 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features {
+    margin: 28px 0 39px 0;
+  }
+
+  .features__content {
+    padding: 0;
+    margin: 22px 46px 0 46px;
+  }
+
+  .features__item {
+    br {
+      display: block;
+    }
   }
 }
