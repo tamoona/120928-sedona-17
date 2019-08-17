@@ -1,3 +1,7 @@
+.photo-preview {
+  position: relative;
+}
+
 .photo-preview__picture {
   vertical-align: bottom;
 }
@@ -86,5 +90,39 @@
   .photo-preview__picture {
     width: 324px;
     height: 269px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-preview--full-width {
+    .photo-preview__picture {
+      width: 1200px;
+      height: 398px;
+    }
+  }
+
+  .photo-preview__picture {
+    width: 400px;
+    height: 268px;
+  }
+
+  .photo-preview__wrapper {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .photo-preview__caption,
+  .photo-preview__total-likes,
+  .photo-preview__author {
+    color: #ffffff;
+  }
+
+  .photo-preview__like-button {
+    svg path {
+      fill: #ffffff;
+    }
   }
 }

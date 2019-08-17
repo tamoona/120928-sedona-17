@@ -16,7 +16,7 @@
     background-image: url("../../img/bg-intro-triangle-mobile.svg");
     background-repeat: no-repeat;
     background-position-x: center;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     right: 0;
     width: 100%;
@@ -133,6 +133,7 @@
 @media (min-width: @desktop-width) {
   .page-main__picture {
     display: flex;
+    height: 301px;
 
     img {
       width: 460px;
@@ -147,9 +148,23 @@
 
   .page-main__title {
     margin: 50px 333px 0 333px;
+
+    &--alt {
+      margin-top: 105px;
+    }
+  }
+
+  .page-main__subtitle {
+    &--alt {
+      margin: 23px 385px 0 385px;
+    }
   }
 
   .page-main__find-hotel {
     min-height: 311px;
+  }
+
+  .page-main__video {
+    min-height: 813px;
   }
 }
