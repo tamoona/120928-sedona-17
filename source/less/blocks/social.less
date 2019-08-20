@@ -3,7 +3,6 @@
   display: flex;
   justify-content: center;
   padding: 0;
-  margin: 0;
 }
 
 .social__item {
@@ -14,7 +13,8 @@
   vertical-align: top;
   justify-content: center;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 7px;
+  margin-top: 15px;
 
   &:last-child {
     margin-right: 0;
@@ -26,5 +26,17 @@
 
   svg {
     fill: #ffffff;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    padding: 0 0 0 4px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social__list {
+    padding: 0 0 0 5px;
   }
 }
