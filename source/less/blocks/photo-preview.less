@@ -53,18 +53,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .photos__item--full-width {
+  .photo-preview--extended {
     .photo-preview__image-link {
       height: 400px;
-    }
-
-    .photo-preview__wrapper {
-      padding: 15px 21px;
     }
   }
 
   .photo-preview__image-link {
-    height: 269px;
+    height: 267px;
     padding: 0;
   }
 
@@ -73,7 +69,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #eaeaea;
-    padding: 15px 32px 15px 22px;
+    padding: 16px 22px 16px 22px;
   }
 
   .photo-preview__caption {
@@ -86,6 +82,7 @@
 
   .photo-preview__action {
     margin: 0;
+    min-width: 63px;
   }
 
   .photo-preview__like-button {
