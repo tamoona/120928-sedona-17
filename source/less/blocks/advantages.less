@@ -10,6 +10,12 @@
 
   img {
     vertical-align: bottom;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    // Object-fit polyfill
+    // stylelint-disable-next-line
+    font-family: "object-fit: cover";
   }
 
   &--real-town {
@@ -107,6 +113,10 @@
   margin-top: 12px;
 }
 
+.advantages__image {
+  flex: 1;
+}
+
 @media (min-width: @tablet-width) {
   .advantages {
     margin-top: 50px;
@@ -115,15 +125,11 @@
   .advantages__item {
     display: flex;
     width: 100%;
+    height: 256px;
+    overflow: hidden;
 
     &:nth-child(6) .advantages__description {
       margin: 25px 55px 0 55px;
-    }
-
-    img {
-      object-fit: cover;
-      width: auto;
-      height: 256px;
     }
 
     &--real-town {
@@ -210,10 +216,6 @@
   }
 
   .advantages__item {
-    img {
-      width: 100%;
-    }
-
     &--real-town {
       .advantages__content {
         margin: 38px 0 45px 0;
