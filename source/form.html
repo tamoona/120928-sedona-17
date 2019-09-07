@@ -51,10 +51,10 @@
           Оставьте свой отзыв
         </h1>
         <p class="page-main__subtitle page-main__subtitle--alt">
-          Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          Помогите нашим отелям стать лучше! Оставьте отзыв о них,&nbsp; а также о посещенных вами достопримечательностях
         </p>
         <form class="form page-main__form">
-          <div class="form__group">
+          <div class="form__group form__group--user-name">
             <h2 class="form__group-title">Представьтесь:</h2>
             <div class="field">
               <label for="user-name-input" class="field__label">
@@ -76,7 +76,7 @@
             </div>
           </div>
           <div class="form__group form__group--contacts">
-            <h2 class="form__group-title">Контактная информация:</h2>
+            <h2 class="form__group-title form__group-title--with-lines">Контактная информация:</h2>
             <div class="field field--with-addon">
               <label for="phone-input" class="field__label">
                 Контактный телефон*:
@@ -104,7 +104,7 @@
               </div>
             </div>
           </div>
-          <div class="form__group form__group--impression">
+          <div class="form__group form__group--impression form__group--delimeter">
             <h2 class="form__group-title">Ваше общее впечатление:</h2>
             <div class="field-radio">
               <input id="impression-input-1" class="visually-hidden field-radio__input" type="radio" name="user_allocation_mobile" checked />
@@ -126,38 +126,40 @@
             </div>
           </div>
           <div class="form__group form__group--landmark">
-            <h2 class="form__group-title">
+            <h2 class="form__group-title form__group-title--with-lines">
               Посещенные
               <br />
               достопримечательности:
             </h2>
-            <div class="field-checkbox">
-              <input id="landmark-input-1" class="visually-hidden field-checkbox__input" type="checkbox" name="user_location" checked />
-              <label for="landmark-input-1" class="field-checkbox__label">
-                Мост Дьявола
-              </label>
-            </div>
-            <div class="field-checkbox">
-              <input id="landmark-input-2" class="visually-hidden field-checkbox__input" type="checkbox" name="user_location" checked />
-              <label for="landmark-input-2" class="field-checkbox__label">
-                Гора-Колокол
-              </label>
-            </div>
-            <div class="field-checkbox">
-              <input id="landmark-input-3" class="visually-hidden field-checkbox__input" type="checkbox" name="user_location" checked />
-              <label for="landmark-input-3" class="field-checkbox__label">
-                Слайд-парк
-              </label>
-            </div>
-            <div class="field-checkbox">
-              <input id="landmark-input-4" class="visually-hidden field-checkbox__input" type="checkbox" name="user_location" />
-              <label for="landmark-input-4" class="field-checkbox__label">
-                Красные скалы
-              </label>
-            </div>
+            <ul class="form__checkbox-list">
+              <li class="form__checkbox-item field-checkbox">
+                <input id="landmark-input-1" class="visually-hidden field-checkbox__input" type="checkbox" name="user_location" checked />
+                <label for="landmark-input-1" class="field-checkbox__label">
+                  Мост Дьявола
+                </label>
+              </li>
+              <li class="form__checkbox-item field-checkbox">
+                <input id="landmark-input-2" class="visually-hidden field-checkbox__input" type="checkbox" name="user_location" checked />
+                <label for="landmark-input-2" class="field-checkbox__label">
+                  Гора-Колокол
+                </label>
+              </li>
+              <li class="form__checkbox-item field-checkbox">
+                <input id="landmark-input-3" class="visually-hidden field-checkbox__input" type="checkbox" name="user_location" checked />
+                <label for="landmark-input-3" class="field-checkbox__label">
+                  Слайд-парк
+                </label>
+              </li>
+              <li class="form__checkbox-item field-checkbox">
+                <input id="landmark-input-4" class="visually-hidden field-checkbox__input" type="checkbox" name="user_location" />
+                <label for="landmark-input-4" class="field-checkbox__label">
+                  Красные скалы
+                </label>
+              </li>
+            </ul>
           </div>
-          <div class="form__group">
-            <h2 class="form__group-title">
+          <div class="form__group form__group--opinion">
+            <h2 class="form__group-title form__group-title--with-lines">
               Опишите свои эмоции:
             </h2>
             <div class="field field--textarea">
@@ -167,8 +169,7 @@
           <div class="form__actions">
             <input class="button form__submit-button" type="submit" value="ОТПРАВИТЬ ОТЗЫВ" />
             <span class="form__disclaimer">
-              <span>*</span>
-              — обязательные поля
+              * — обязательные поля
             </span>
           </div>
         </form>
