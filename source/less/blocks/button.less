@@ -8,4 +8,17 @@
   border: none;
   background-color: @primary;
   text-transform: uppercase;
+
+  &--popup-small {
+    font-size: 18px;
+    line-height: 1.44;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    &--popup-small {
+      font-size: 21px;
+    }
+  }
 }
