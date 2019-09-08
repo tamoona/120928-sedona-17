@@ -55,7 +55,7 @@
                 <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x" />
                 <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x" />
                 <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x" />
-                <img class="photo-preview__picture " src="img/photo-sunset-mobile@1x.jpg 1x" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Фото дороги в Седону" />
+                <img class="photo-preview__picture " src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Фото дороги в Седону" />
               </picture>
             </a>
             <div class="photo-preview__wrapper">
@@ -81,7 +81,7 @@
                 <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x" />
                 <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x" />
                 <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x" />
-                <img class="photo-preview__picture" src="img/photo-cactus-mobile@1x.jpg 1x" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Фото кактуса на фоне гор" />
+                <img class="photo-preview__picture" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Фото кактуса на фоне гор" />
               </picture>
             </a>
             <div class="photo-preview__wrapper">
@@ -107,7 +107,7 @@
                 <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x" />
                 <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x" />
                 <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x" />
-                <img class="photo-preview__picture" src="img/photo-roads-mobile@1x.jpg 1x" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Фото переплетающейся дороги, окружённой деревьями" />
+                <img class="photo-preview__picture" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Фото переплетающейся дороги, окружённой деревьями" />
               </picture>
             </a>
             <div class="photo-preview__wrapper">
@@ -133,7 +133,7 @@
                 <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x" />
                 <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x" />
                 <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x" />
-                <img class="photo-preview__picture" src="img/photo-bridge-mobile@1x.jpg 1x" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фото горы под названием «Мост дьявола»" />
+                <img class="photo-preview__picture" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фото горы под названием «Мост дьявола»" />
               </picture>
             </a>
             <div class="photo-preview__wrapper">
@@ -152,7 +152,50 @@
             </div>
           </div>
         </section>
-        <section class="video page-main__video"></section>
+        <section class="video">
+          <h2 class="video__title">Все еще сомневаетесь?</h2>
+          <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <div class="video__wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x" />
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x" />
+              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x" />
+              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x" />
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x" />
+              <img class="video__preview" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Фото горы под названием «Мост дьявола»" />
+            </picture>
+            <div class="video__actions">
+              <div class="video__volume slider">
+                <div class="slider__bar">
+                  <div class="slider__toggle"></div>
+                </div>
+                <input id="volume" type="text" class="slider__input visually-hidden" name="price-min" value="100" />
+                <label class="visually-hidden" for="volume">Уровень звука</label>
+              </div>
+              <div class="video__replay">
+                <button class="video__icon-button" type="button">
+                  <svg width="16" height="20">
+                    <use xlink:href="#icon-video-replay"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="video__subtitles">
+                <button class="video__icon-button" type="button">
+                  <svg width="32" height="20">
+                    <use xlink:href="#icon-video-subtitles"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="video__fullscreen">
+                <button class="video__icon-button" type="button">
+                  <svg width="20" height="20">
+                    <use xlink:href="#icon-video-fullscreen"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <footer class="page-footer">
         <p class="page-footer__hashtag">#visitSEDONA</p>
