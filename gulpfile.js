@@ -26,6 +26,7 @@ gulp.task("server", function() {
   });
 
   gulp.watch("source/less/**/*.less", gulp.series("css", "refresh"));
+  gulp.watch("source/js/**/*.js", gulp.series("copy", "refresh"));
   gulp.watch("source/img/{icon-*,logo-htmlacademy}.svg", gulp.series("sprite", "html"));
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
