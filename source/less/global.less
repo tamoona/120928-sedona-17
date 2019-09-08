@@ -34,3 +34,22 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.no-js {
+  .main-nav__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .no-js {
+    .main-nav__list {
+      flex-direction: row;
+    }
+  }
+}
