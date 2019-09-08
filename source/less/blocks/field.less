@@ -2,23 +2,21 @@
   display: flex;
   margin: 0 auto 20px;
   align-items: center;
+}
 
-  &--with-addon {
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 17px;
+.field--with-addon {
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 17px;
 
-    .field__label {
-      margin-bottom: 7px;
-      margin-left: 21px;
-    }
+  .field__label {
+    margin-bottom: 7px;
+    margin-left: 21px;
   }
+}
 
-  &--textarea {
-    .field__input {
-      padding: 14px 20px;
-    }
-  }
+.field--textarea .field__input {
+  padding: 14px 20px;
 }
 
 .field__label {
@@ -58,17 +56,11 @@
 }
 
 @media (min-width: @tablet-width) {
-  .field {
-    &--with-addon {
-      margin-bottom: 28px;
-    }
+  .field--with-addon {
+    margin-bottom: 28px;
+  }
 
-    &--textarea {
-      margin: 0 48px 18px;
-
-      .field__input {
-        padding: 12px 20px 16px;
-      }
-    }
+  .field--textarea .field__input {
+    padding: 12px 20px 16px;
   }
 }
