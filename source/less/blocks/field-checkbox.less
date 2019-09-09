@@ -6,16 +6,15 @@
   height: 56px;
 }
 
-.field-checkbox__input {
-  & + label {
-    display: block;
-    font-size: 18px;
-    margin-left: 80px;
-    text-transform: none;
-    margin-top: -3px;
-  }
+.field-checkbox__input + label {
+  display: block;
+  font-size: 18px;
+  margin-left: 80px;
+  margin-top: -3px;
+  font-weight: 700;
+  line-height: 1.44;
 
-  & + label::before {
+  &::before {
     content: "";
     position: absolute;
     width: 56px;
@@ -27,16 +26,38 @@
     left: 0;
     top: 0;
   }
+}
 
-  &:checked + label::after {
-    content: "";
-    position: absolute;
-    background-image: url("../img/icon-tick.svg");
-    width: 23px;
-    height: 16px;
-    background-repeat: no-repeat;
-    left: 18px;
-    top: 18px;
+.field-checkbox__input + label:hover {
+  &::before {
+    background-color: @alt-dark;
+  }
+}
+
+.field-checkbox__input + label:active,
+.field-checkbox__input + label:focus,
+.field-checkbox__input:focus + label,
+.field-checkbox__input:active + label {
+  &::before {
+    background-color: @alt-darker;
+  }
+}
+
+.field-checkbox__input:checked + label::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-tick.svg");
+  width: 23px;
+  height: 16px;
+  background-repeat: no-repeat;
+  left: 18px;
+  top: 18px;
+}
+
+.field-checkbox__input:checked + label:focus,
+.field-checkbox__input:checked + label:active {
+  &::after {
+    opacity: 0.3;
   }
 }
 

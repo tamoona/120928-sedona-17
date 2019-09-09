@@ -8,4 +8,21 @@
   border: none;
   background-color: @primary;
   text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  transition: background-color 250ms ease-in-out;
+
+  &:hover {
+    background-color: @primary-dark;
+  }
+
+  &:focus,
+  &:active {
+    background-color: @primary-darker;
+    color: @disabled-alt;
+  }
+
+  &--disabled {
+    background-color: @alt-dark;
+  }
 }

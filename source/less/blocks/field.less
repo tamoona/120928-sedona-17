@@ -27,7 +27,7 @@
 }
 
 .field__input {
-  display: inline-block;
+  display: block;
   flex: 1;
   padding: 16px 20px;
   border: none;
@@ -35,8 +35,21 @@
   font-size: 18px;
   font-weight: 700;
   text-transform: none;
-  line-height: 26px;
+  line-height: 1.44;
   width: 100%;
+  color: @text-dark;
+
+  &:hover {
+    background-color: @alt-dark;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #ffffff;
+    border: solid 4px @alt-dark;
+    padding: 12px 16px;
+    outline: none;
+  }
 
   &::placeholder {
     color: @text-dark;
@@ -62,5 +75,10 @@
 
   .field--textarea .field__input {
     padding: 12px 20px 16px;
+
+    &:active,
+    &:focus {
+      padding: 8px 16px 12px;
+    }
   }
 }
