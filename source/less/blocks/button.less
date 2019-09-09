@@ -25,4 +25,17 @@
   &--disabled {
     background-color: @alt-dark;
   }
+
+  &--popup-small {
+    font-size: 18px;
+    line-height: 1.44;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    &--popup-small {
+      font-size: 21px;
+    }
+  }
 }
