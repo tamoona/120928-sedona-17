@@ -22,7 +22,7 @@ function submitForm(event) {
   event.preventDefault();
 
   var form = document.forms["review-form"];
-  
+
   var name = form["user_name"];
   var surname = form["user_surname"];
   var patronymic = form["user_patronymic"];
@@ -44,11 +44,17 @@ window.onload = function() {
   document.querySelector("body").classList.remove("no-js");
 
   document.querySelector(".main-nav__toggle").addEventListener("click", toggleMenu);
-  document.querySelector(".form").addEventListener("submit", submitForm);
+
+  var form = document.querySelector(".form");
+
+  if (form) {
+    form.addEventListener("submit", submitForm);
+  }
 
   var closeButtons = document.querySelectorAll(".button--popup-close");
 
   closeButtons.forEach(function(el) {
+    if (!el) return;
     el.addEventListener("click", closePopup);
   });
 };
