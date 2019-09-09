@@ -51,7 +51,7 @@
         <p class="page-main__subtitle page-main__subtitle--alt">
           Помогите нашим отелям стать лучше! Оставьте отзыв о них,&nbsp; а также о посещенных вами достопримечательностях
         </p>
-        <form method="post" action="https://echo.htmlacademy.ru" class="form page-main__form">
+        <form name="review-form" method="post" action="https://echo.htmlacademy.ru" class="form page-main__form">
           <div class="form__group form__group--user-name">
             <h2 class="form__group-title">Представьтесь:</h2>
             <div class="field">
@@ -80,7 +80,7 @@
                 <div class="field field--with-addon form__information-field">
                   <label for="phone-input" class="field__label form__information-label"> <span>Контактный</span> телефон*: </label>
                   <div class="field__addon-wrapper form__information-input">
-                    <input id="phone-input" class="field__input" type="text" name="number" placeholder="Введите телефон" />
+                    <input id="phone-input" class="field__input" type="text" name="phone" placeholder="Введите телефон" />
                     <div class="field__addon">
                       <svg width="18" height="18">
                         <use xlink:href="#icon-phone"></use>
@@ -224,7 +224,7 @@
           </p>
         </div>
         <div class="popup__action">
-          <button class="button button--popup-small">
+          <button class="button button--popup-close button--popup-small">
             ЗАКРЫТЬ ОКНО
           </button>
         </div>
@@ -235,7 +235,7 @@
           <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         </div>
         <div class="popup__action">
-          <button class="button">
+          <button class="button button--popup-close">
             OK
           </button>
         </div>
